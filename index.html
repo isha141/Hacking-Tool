@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+           background-color: black;
+           color: rgb(30, 232, 30);
+           margin: 0%;
+           padding: 0%;
+           font-weight: 700;
+           font-size: larger;
+        }
+    
+    </style>
+  </head>
+  <body> 
+     <div id="container_box">
+       
+     </div>
+    <!-- <script>
+      async function myfunction(){ 
+          setInterval(function(){
+              setInterval(function(){
+               console.log("Welcome to the server"); 
+              },2000)
+              setInterval(function(){
+              console.log("connectiong to ishijindal_2708");
+              },4000)
+              setInterval(function(){
+              console.log("connectiong to facebook");
+              },6000)
+         },2000)
+      }
+      myfunction();
+   </script> -->
+    <script>
+      // Introducing Hacker Man
+      let a = [
+        "Initiallising Hacker tool!!!\n",
+        "Connecting to ishii_2708\n",
+        "Connecting to facebook Isha Jindal\n",
+        "Connecting to vishal Jindal LinkedIn\n",
+        "Connecting to nehajindal890@gmail.com\n",
+        "Connection failed, Retrying......\n",
+        "Connecting succesfully to nehajindal890@gmail.com\n"
+      ];
+      /* async function myfunction() { 
+           setInterval(function(){
+            console.log(a[0]);
+           },3000) 
+           setInterval(function(){
+            console.log(a[1]);
+           },5000) 
+           setInterval(function(){
+            console.log(a[2]);
+           },8000) 
+          setInterval(function(){
+            console.log(a[3]);
+           },10000) 
+      }
+      myfunction(); */
+let ihtml="";
+const sleep=async (seconds)=>{
+       return new Promise((resolve,reject)=>{
+          setTimeout(()=>{
+             resolve(true)
+          },seconds*1000)
+       })
+}
+const showHack=async(a)=>{
+          await sleep(2);
+          ihtml+=a;
+          ihtml+='<br>';
+          container_box.innerHTML=ihtml;
+           console.log(a);
+      }
+// async iifee 
+(async()=>{
+     for(i=0;i<a.length;++i){ 
+         await showHack (a[i]);
+     }
+})()
+    </script>
+  </body>
+</html>
